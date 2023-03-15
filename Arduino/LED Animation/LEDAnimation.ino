@@ -84,17 +84,4 @@ void loop() {
     delay(500);
     digitalWrite(LED[i], HIGH);
   }
-
-
-
-
-  
-
-  
-
-
-
-  
-  
-
 }
