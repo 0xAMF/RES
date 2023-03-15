@@ -53,6 +53,7 @@ void loop() {
     digitalWrite(LED[7 - i - 1], HIGH);
 
     delay(500);
+     
     digitalWrite(LED[i], LOW);
     digitalWrite(LED[i + 1], LOW);
     digitalWrite(LED[7 - i], LOW);
