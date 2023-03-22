@@ -4,7 +4,7 @@ int fibonacci(int n);
 
 int main(void)
 {
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i <= 100; i++)
     {
         printf("\nfibonacci(%d) = %d\n", i, fibonacci(i));
     }
