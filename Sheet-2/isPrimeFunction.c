@@ -4,26 +4,23 @@ int isPrime(int n);
 int main(void)
 {
     int n;
-    printf("Enter a number: ");
+    printf("\nEnter a number: ");
     scanf("%d", &n);
 
     if (isPrime(n) == 0)
-        puts("\nPRIME NUMBER!!\n");
+        printf("\n%d is a prime number\n\n", n);
     else
-        puts("\nNOT A PRIME NUMBER!!\n");
+        printf("\n%d is not a prime number\n\n", n);
 }
 
 int isPrime(int n)
 {
-    int flag;
-    for (int i = n - 1; i > 1; i--)
+    int flag = 0;
+    for (int i = 2; i < n; i++)
     {
-        if (n % i != 0)
+        if (n % i == 0)
             //prime
-            flag = 0;
-        else
-            //not prime
-            flag = 1; 
+            flag = 1;
     } 
     return flag;  
 }
