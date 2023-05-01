@@ -10,7 +10,7 @@ int main(void)
     printf("\nEnter the number you want to search for: ");
     scanf("%d", &n);
 
-    if (binarySearch(arr, n, 0, size - 1) == 0)
+    if (binarySearch(arr, n, 0, size - 1) == -1)
         puts("\nNOT FOUND!");
     else
         printf("\nFound %d at index %d",n ,binarySearch(arr, n, 0, size - 1));
@@ -34,5 +34,5 @@ int binarySearch(int arr[], int n, int low, int high)
             return binarySearch(arr, n, mid + 1, high); 
     }
     else
-        return 0;
+        return -1;
 }
