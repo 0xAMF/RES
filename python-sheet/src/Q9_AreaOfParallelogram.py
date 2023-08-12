@@ -8,7 +8,7 @@ class parallelogram:
         self.angle = angle
 
     def get_area(self):
-        area = self.side1 * self.side2 * math.sin(self.angle)
+        area = self.side1 * self.side2 * math.sin(math.radians(self.angle))
         return area
 
 
